@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*
+CS 3312, spring 2023
+Exam 2
+YOUR NAME: Kyle Bunger
+*/
+
+html {
+   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   background-color: rgb(245, 255, 250);
+   font-family: Futura, "Century Gothic", Geneva, Tahoma, Verdana, Arial, sans-serif;
+   margin: 20px;
+   text-align: center;
+}
+
+h1 {
+   color: rgb(90, 0, 45);
+   font-size: 200%;
+   font-weight: normal;
+}
+
+h2 {
+   color: rgb(90, 0, 45);
+   font-size: 120%;
+   font-weight: normal;
+}
+
+.content {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+.data-boxes {
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.data-box {
+   background-color: rgb(255, 255, 255);
+   border-color: rgb(150, 195, 240);
+   border-radius: 20px;
+   border-style: solid;
+   border-width: 2px;
+   margin: 20px;
+   padding: 20px;
+}
+
+.standout-data {
+   color: rgb(0, 45, 90);
+   font-size: 250%;
+}
+
+img {
+   vertical-align: middle;
+}
+
+.input-box {
+   border-color: rgb(240, 150, 195);
+   border-radius: 20px;
+   border-style: solid;
+   border-width: 2px;
+   font-size: 125%;
+   margin: 20px;
+   padding: 20px;
+}
+
+input {
+   font-size: 125%;
+   text-align: center;
+   width: 5em;
+}
+
+button {
+   font-family: "Century Gothic", sans-serif;
+   font-size: 125%;
+   padding: 5px;
+   margin: 20px;
+}
+
+#message {
+   color: rgb(255, 0, 0);
+   padding: 10px;
+}
+
+/* The above CSS rules style for a desktop screen. */
+/* The below media queries have CSS rules meant for mobile screens. */
+
+@media only screen and (max-width: 1000px) {
+   h1, h2 {
+      color: rgb(240, 150, 195);
+   }
+
+   .standout-data {
+      color: rgb(150, 195, 240);
+   }
+
+   .input-box {
+      border-color: rgb(90, 0, 45);
+   }
+
+   input {
+      background-color: rgb(0, 0, 0);
+      border-color: rgb(90, 0, 45);
+      color: rgb(255, 255, 255);
+   }
+
+   /* Change colors when screen <1000px */
+   body {
+      background-color: rgb(0, 30, 15);
+      color: rgb(255, 255, 255);
+   }
+
+   .data-box {
+      background-color: rgb(0, 0, 0);
+      border-color: rgb(0, 45, 90);
+   }
+
+}
+
+/* Rearrange page when window is taller than it is wide */
+@media only screen and (orientation: portrait) {
+   .content {
+      flex-direction: column;
+   }
+}

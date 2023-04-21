@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+
+<meta charset="UTF-8" />
+<title>Exam 2</title>
+
+<!--
+CS 3312, spring 2022
+Exam 2
+DON'T CHANGE THIS FILE
+-->
+
+<!-- Import a CSS stylesheet to style the page. -->
+<link href="style.css" rel="stylesheet" />
+
+<!-- Tell mobile devices that our design is responsive to their size. -->
+<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+</head><body>
+
+<h1>Current conditions near <span id="location">?</span></h1>
+<h2>at <span id="time">?</span> on <span id="date">?</span></h2>
+
+<div class="content">
+   <div class="data-boxes">
+      <div class="data-box" id="sky">
+         <div><span class="standout-data" id="sky-data">?</span></div>
+         <div><img alt="[sky icon]" id="sky-icon" src="?" /> <span id="sky-desc-data">?</span></div>
+      </div>
+      <div class="data-box" id="temperature">
+         <div>temperature</div>
+         <div><span class="standout-data" id="temperature-data">?</span> &deg;F</div>
+      </div>
+      <div class="data-box" id="wind">
+         <div>wind</div>
+         <div><span class="standout-data" id="wind-data">?</span> mph</div>
+      </div>
+      <div class="data-box" id="humidity">
+         <div>humidity</div>
+         <div><span class="standout-data" id="humidity-data">?</span></div>
+      </div>
+      <div class="data-box" id="pressure">
+         <div>pressure</div>
+         <div><span class="standout-data" id="pressure-data">?</span> inHg</div>
+      </div>
+      <div class="data-box" id="cloud">
+         <div>cloud cover</div>
+         <div><span class="standout-data" id="cloud-data">?</span></div>
+      </div>
+   </div>
+
+   <div class="input-box">
+      <h2>Select world location</h2>
+      <div>
+         <label>Latitude: <input id="latitude" step="0.5" type="number" /></label>
+      </div>
+      <div>
+         <label>Longitude: <input id="longitude" step="0.5" type="number" /></label>
+      </div>
+      <div>
+         <button id="refresh-weather">Refresh</button>
+      </div>
+      <div id="message"></div>
+   </div>
+</div>
+
+<!-- Import a JavaScript script to add interactivity to the page. -->
+<script src="script.js"></script>
+
+</body></html>
